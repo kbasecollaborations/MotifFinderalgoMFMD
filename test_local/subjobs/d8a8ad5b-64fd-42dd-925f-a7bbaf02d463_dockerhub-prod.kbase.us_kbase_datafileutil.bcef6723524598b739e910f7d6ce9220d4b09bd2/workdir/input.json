@@ -1,0 +1,1 @@
+{"id":"754330877273","method":"DataFileUtil.ws_name_to_id","params":["man4ish_gupta:narrative_1556117088316"],"version":"1.1","context":{"call_stack":[{"time":"2019-06-04T02:21:38+0000","method":"DataFileUtil._ws_name_to_id_submit"}],"service_ver":"release"}}

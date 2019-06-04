@@ -1,0 +1,124 @@
+{
+
+    "ver": "0.0.1",
+    "authors": [
+        "man4ish_gupta"
+    ],
+    "contact": "",
+    "categories": ["active"],
+    "widgets": {
+        "input": null,
+        "output": null
+    },
+    "parameters": [ 
+        {
+            "id": "genome_ref",
+            "optional": true,
+            "advanced": false,
+            "allow_multiple": false,
+            "default_values": [ "" ],
+            "field_type": "text",
+            "text_options": {
+                "valid_ws_types": [ "KBaseGenomes.Genome"]
+            }
+        },
+        {
+
+            "id": "featureSet_ref",
+            "optional": false,
+            "advanced": false,
+            "allow_multiple": false,
+            "default_values": [ "" ],
+            "field_type": "text",
+            "text_options": {
+                "valid_ws_types": [ "KBaseCollections.FeatureSet" ]
+            }
+        },
+        {
+            "id": "prb",
+            "optional": false,
+            "advanced": true,
+            "allow_multiple": false,
+            "default_values": [ "8" ],
+            "field_type": "text",
+            "text_options": {
+                "validate_as": "int",
+                "min_integer" : 0
+            }
+        },
+        {
+            "id": "motif_length",
+            "optional": false,
+            "advanced": true,
+            "allow_multiple": false,
+            "default_values": [ "16" ],
+            "field_type": "text",
+            "text_options": {
+                "validate_as": "int",
+                "min_integer" : 0
+            }
+        },
+        {
+
+            "id": "obj_name",
+            "optional": false,
+            "advanced": false,
+            "allow_multiple": false,
+            "default_values": [ "mfmd_Motif_Set" ],
+            "field_type": "text"
+        }
+    ],
+    "behavior": {
+        "service-mapping": {
+            "url": "",
+            "name": "man4ish_guptamfmd",
+            "method": "DiscoverMotifsFromSequenceSet",
+            "input_mapping": [
+                {
+                    "narrative_system_variable": "workspace",
+                    "target_property": "workspace_name"
+                },
+		{
+                    "input_parameter": "genome_ref",
+                    "target_property": "genome_ref",
+                    "target_type_transform": "resolved-ref"
+                },
+                {
+                    "input_parameter": "featureSet_ref",
+                    "target_property": "featureSet_ref",
+                    "target_type_transform": "resolved-ref"
+                }, 
+                {
+                    "input_parameter": "prb",
+                    "target_property": "prb"
+
+                },
+                {
+                    "input_parameter": "motif_length",
+                    "target_property": "motif_length"
+
+                },
+                {
+                    "input_parameter": "obj_name",
+                    "target_property": "obj_name"
+
+                }
+
+            ],
+            "output_mapping": [
+                {
+                    "service_method_output_path": [0,"report_name"],
+                    "target_property": "report_name"
+                },{
+                    "service_method_output_path": [0,"report_ref"],
+                    "target_property": "report_ref"
+                },
+                {
+                    "narrative_system_variable": "workspace",
+                    "target_property": "workspace_name"
+                }
+            ]
+        }
+    },
+    "job_id_output_field": "docker"
+}

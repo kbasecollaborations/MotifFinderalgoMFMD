@@ -1,0 +1,1 @@
+{"id":"5711087996393588","method":"AssemblyUtil.get_assembly_as_fasta","params":[{"ref":"1745/514/4"}],"version":"1.1","context":{"call_stack":[{"time":"2019-06-04T02:04:24+0000","method":"AssemblyUtil._get_assembly_as_fasta_submit"}],"service_ver":"release"}}
