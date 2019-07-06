@@ -22,8 +22,8 @@ class mfmdUtil:
       return command
 
   def run_mfmd_command(self, command):
-      print(command)
-      os.system('R CMD INSTALL /kb/module/deps/kb_mfmd/Rserve_1.7-3.1.tar.gz')
+      #print(command)
+      #os.system('R CMD INSTALL /kb/module/deps/kb_mfmd/Rserve_1.7-3.1.tar.gz')
       os.system('/usr/lib/R/bin/Rscript /kb/module/deps/kb_mfmd/mfmd/script.R')
       os.system(command)
 

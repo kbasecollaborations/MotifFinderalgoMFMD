@@ -47,9 +47,9 @@ class MotifFindermfmd:
     # state. A method could easily clobber the state set by another while
     # the latter method is running.
     ######################################### noqa
-    VERSION = "0.0.1"
-    GIT_URL = "https://github.com/man4ish/MotifFinderalgoMFMD.git"
-    GIT_COMMIT_HASH = "7dcd0862e8fdb4ab2d1b16d5a31addbed23f40f6"
+    VERSION = ""
+    GIT_URL = ""
+    GIT_COMMIT_HASH = ""
 
     #BEGIN_CLASS_HEADER
     #END_CLASS_HEADER
@@ -199,8 +199,11 @@ class MotifFindermfmd:
         """
         :param params: instance of type "discover_seq_input" -> structure:
            parameter "workspace_name" of String, parameter "genome_ref" of
-           String, parameter "SS_ref" of String, parameter "prb" of Double,
-           parameter "motif_length" of Long, parameter "obj_name" of String
+           String, parameter "SS_ref" of String, parameter "promoter_length"
+           of Long, parameter "motif_min_length" of Long, parameter
+           "motif_max_length" of Long, parameter "obj_name" of String,
+           parameter "background" of Long, parameter "mask_repeats" of Long,
+           parameter "background_group" of mapping from String to String
         :returns: instance of type "extract_output_params" -> structure:
            parameter "report_name" of String, parameter "report_ref" of String
         """

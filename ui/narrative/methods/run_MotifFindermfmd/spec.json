@@ -22,16 +22,16 @@
                 "valid_ws_types": [ "KBaseGenomes.Genome"]
             }
         },
-        {
+	{
 
-            "id": "featureSet_ref",
+            "id": "SS_ref",
             "optional": false,
             "advanced": false,
             "allow_multiple": false,
             "default_values": [ "" ],
             "field_type": "text",
             "text_options": {
-                "valid_ws_types": [ "KBaseCollections.FeatureSet" ]
+                "valid_ws_types": [ "KBaseSequences.SequenceSet" ]
             }
         },
         {
@@ -39,10 +39,10 @@
             "optional": false,
             "advanced": true,
             "allow_multiple": false,
-            "default_values": [ "8" ],
+            "default_values": [ "0.05" ],
             "field_type": "text",
             "text_options": {
-                "validate_as": "int",
+                "validate_as": "float",
                 "min_integer" : 0
             }
         },
@@ -83,11 +83,11 @@
                     "target_property": "genome_ref",
                     "target_type_transform": "resolved-ref"
                 },
-                {
-                    "input_parameter": "featureSet_ref",
-                    "target_property": "featureSet_ref",
+		{
+                    "input_parameter": "SS_ref",
+                    "target_property": "SS_ref",
                     "target_type_transform": "resolved-ref"
-                }, 
+                },
                 {
                     "input_parameter": "prb",
                     "target_property": "prb"

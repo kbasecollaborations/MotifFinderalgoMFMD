@@ -46,13 +46,9 @@ module MotifFindermfmd {
         string workspace_name;
         string genome_ref;
         string SS_ref;
-        int promoter_length;
-        int motif_min_length;
-        int motif_max_length;
+        float prb;
+        int motif_length;
         string obj_name;
-        int background;
-        int mask_repeats;
-        mapping<string, string> background_group;
       } discover_seq_input;
 
       funcdef find_motifs(find_motifs_params params)

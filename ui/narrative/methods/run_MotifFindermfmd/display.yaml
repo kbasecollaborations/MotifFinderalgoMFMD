@@ -4,7 +4,7 @@
 name: Motif Finder MFMD
 
 tooltip: |
-    Use the MFMD motif finding tool to discover sequence motifs from pasta file.
+    Use the MFMD motif finding tool to discover sequence motifs from fasta file.
 
 screenshots: []
 
@@ -34,11 +34,11 @@ parameters :
             Genome
         short-hint : |
             The genome to evaluate
-    featureSet_ref :
+    SS_ref :
         ui-name : |
-            Feature Set
+            Sequence Set
         short-hint : |
-            featurest
+            sequences         
     prb :
         ui-name : |
             probibility
