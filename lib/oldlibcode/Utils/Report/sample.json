@@ -1,0 +1,355 @@
+{
+    "Alphabet": [
+        "A",
+        "C",
+        "G",
+        "T"
+    ],
+    "Background": {
+        "A": 0.0,
+        "C": 0.0,
+        "G": 0.0,
+        "T": 0.0
+    },
+    "Condition": "Temp",
+    "Motifs": [
+        {
+            "Iupac_sequence": "TTTTTTTTTTTTTT",
+            "Motif_Locations": [
+                {
+                    "end": 928,
+                    "orientation": "-",
+                    "sequence": "",
+                    "sequence_id": "Potri.002G081000",
+                    "start": 942
+                },
+                {
+                    "end": 1968,
+                    "orientation": "-",
+                    "sequence": "",
+                    "sequence_id": "Potri.011G106800",
+                    "start": 1982
+                },
+                {
+                    "end": 668,
+                    "orientation": "+",
+                    "sequence": "TTTTTTTTTTTTTG",
+                    "sequence_id": "Potri.018G114100",
+                    "start": 654
+                },
+                {
+                    "end": 721,
+                    "orientation": "+",
+                    "sequence": "TTTTTTTTTTTTTG",
+                    "sequence_id": "Potri.001G252600",
+                    "start": 707
+                },
+                {
+                    "end": 1906,
+                    "orientation": "-",
+                    "sequence": "",
+                    "sequence_id": "Potri.012G023700",
+                    "start": 1920
+                },
+                {
+                    "end": 434,
+                    "orientation": "+",
+                    "sequence": "TTTTTTTTTTTTTT",
+                    "sequence_id": "Potri.004G074300",
+                    "start": 420
+                },
+                {
+                    "end": 1409,
+                    "orientation": "+",
+                    "sequence": "TTTTTTTTTTTTTG",
+                    "sequence_id": "Potri.001G397200",
+                    "start": 1395
+                },
+                {
+                    "end": 608,
+                    "orientation": "-",
+                    "sequence": "",
+                    "sequence_id": "Potri.003G163600",
+                    "start": 622
+                },
+                {
+                    "end": 574,
+                    "orientation": "+",
+                    "sequence": "TTTTTTTTTTTTTG",
+                    "sequence_id": "Potri.002G152200",
+                    "start": 560
+                },
+                {
+                    "end": 125,
+                    "orientation": "+",
+                    "sequence": "TTTTTTTTTTTTTA",
+                    "sequence_id": "Potri.009G032700",
+                    "start": 111
+                },
+                {
+                    "end": 753,
+                    "orientation": "-",
+                    "sequence": "",
+                    "sequence_id": "Potri.005G069500",
+                    "start": 767
+                },
+                {
+                    "end": 1865,
+                    "orientation": "-",
+                    "sequence": "",
+                    "sequence_id": "Potri.011G055500",
+                    "start": 1879
+                },
+                {
+                    "end": 1473,
+                    "orientation": "-",
+                    "sequence": "",
+                    "sequence_id": "Potri.001G404100",
+                    "start": 1487
+                },
+                {
+                    "end": 1384,
+                    "orientation": "+",
+                    "sequence": "TTGTTTTTTTTTTC",
+                    "sequence_id": "Potri.010G169400",
+                    "start": 1370
+                },
+                {
+                    "end": 1203,
+                    "orientation": "+",
+                    "sequence": "TTGTTTTTTTTTTA",
+                    "sequence_id": "Potri.017G146800",
+                    "start": 1189
+                },
+                {
+                    "end": 137,
+                    "orientation": "+",
+                    "sequence": "TTTTTTTTTTCTTA",
+                    "sequence_id": "Potri.017G084600",
+                    "start": 123
+                },
+                {
+                    "end": 237,
+                    "orientation": "+",
+                    "sequence": "TTTTTTTTTTCTTT",
+                    "sequence_id": "Potri.001G055900",
+                    "start": 223
+                },
+                {
+                    "end": 761,
+                    "orientation": "+",
+                    "sequence": "TTTTTTTTTTCTTA",
+                    "sequence_id": "Potri.012G127700",
+                    "start": 747
+                },
+                {
+                    "end": 1955,
+                    "orientation": "+",
+                    "sequence": "TTTTTTTTTTCTTC",
+                    "sequence_id": "Potri.005G168700",
+                    "start": 1941
+                },
+                {
+                    "end": 727,
+                    "orientation": "+",
+                    "sequence": "TTTTTTTTTTTTTA",
+                    "sequence_id": "Potri.001G029800",
+                    "start": 713
+                },
+                {
+                    "end": 1397,
+                    "orientation": "-",
+                    "sequence": "",
+                    "sequence_id": "Potri.003G050100",
+                    "start": 1411
+                },
+                {
+                    "end": 467,
+                    "orientation": "-",
+                    "sequence": "",
+                    "sequence_id": "Potri.008G122100",
+                    "start": 481
+                },
+                {
+                    "end": 401,
+                    "orientation": "-",
+                    "sequence": "",
+                    "sequence_id": "Potri.007G013600",
+                    "start": 415
+                },
+                {
+                    "end": 1159,
+                    "orientation": "-",
+                    "sequence": "",
+                    "sequence_id": "Potri.011G123300",
+                    "start": 1173
+                },
+                {
+                    "end": 130,
+                    "orientation": "+",
+                    "sequence": "TTTTTTTTTTGTTT",
+                    "sequence_id": "Potri.010G163000",
+                    "start": 116
+                },
+                {
+                    "end": 1120,
+                    "orientation": "-",
+                    "sequence": "",
+                    "sequence_id": "Potri.015G034500",
+                    "start": 1134
+                },
+                {
+                    "end": 1400,
+                    "orientation": "+",
+                    "sequence": "TCGTTTTTTTTTTT",
+                    "sequence_id": "Potri.007G099400",
+                    "start": 1386
+                },
+                {
+                    "end": 1679,
+                    "orientation": "+",
+                    "sequence": "TTTTTTTATTTTTT",
+                    "sequence_id": "Potri.014G025200",
+                    "start": 1665
+                },
+                {
+                    "end": 1589,
+                    "orientation": "-",
+                    "sequence": "",
+                    "sequence_id": "Potri.019G031400",
+                    "start": 1603
+                },
+                {
+                    "end": 537,
+                    "orientation": "-",
+                    "sequence": "",
+                    "sequence_id": "Potri.014G103700",
+                    "start": 551
+                },
+                {
+                    "end": 804,
+                    "orientation": "-",
+                    "sequence": "",
+                    "sequence_id": "Potri.012G007500",
+                    "start": 818
+                },
+                {
+                    "end": 1392,
+                    "orientation": "-",
+                    "sequence": "",
+                    "sequence_id": "Potri.008G140400",
+                    "start": 1406
+                },
+                {
+                    "end": 1672,
+                    "orientation": "+",
+                    "sequence": "TTGTTCTTTTTTTT",
+                    "sequence_id": "Potri.009G089400",
+                    "start": 1658
+                },
+                {
+                    "end": 1536,
+                    "orientation": "+",
+                    "sequence": "TTGTTTTTTTGTTT",
+                    "sequence_id": "Potri.009G096000",
+                    "start": 1522
+                },
+                {
+                    "end": 1298,
+                    "orientation": "+",
+                    "sequence": "TTTTTTTATTTTTA",
+                    "sequence_id": "Potri.008G089000",
+                    "start": 1284
+                },
+                {
+                    "end": 760,
+                    "orientation": "+",
+                    "sequence": "TTTTTTTTTTATTA",
+                    "sequence_id": "Potri.007G029400",
+                    "start": 746
+                },
+                {
+                    "end": 176,
+                    "orientation": "-",
+                    "sequence": "",
+                    "sequence_id": "Potri.014G103000",
+                    "start": 190
+                }
+            ],
+            "PFM": {
+                "A": [],
+                "C": [],
+                "G": [],
+                "T": []
+            },
+            "PWM": {
+                "A": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.081081,
+                    0.0,
+                    0.0,
+                    0.027027,
+                    0.0,
+                    0.0
+                ],
+                "C": [
+                    0.0,
+                    0.027027,
+                    0.081081,
+                    0.0,
+                    0.081081,
+                    0.0,
+                    0.027027,
+                    0.027027,
+                    0.027027,
+                    0.0,
+                    0.0,
+                    0.135135,
+                    0.0,
+                    0.027027
+                ],
+                "G": [
+                    0.108108,
+                    0.0,
+                    0.0,
+                    0.243243,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.054054,
+                    0.0,
+                    0.0
+                ],
+                "T": [
+                    0.891892,
+                    0.972973,
+                    0.918919,
+                    0.756757,
+                    0.918919,
+                    1.0,
+                    0.972973,
+                    0.972973,
+                    0.891892,
+                    1.0,
+                    1.0,
+                    0.783784,
+                    1.0,
+                    0.972973
+                ]
+            }
+        }
+            
+    ],
+    "SequenceSet_ref": "123"
+}

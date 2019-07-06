@@ -1,5 +1,5 @@
 module-name:
-    man4ish_guptamfmd
+    MotifFindermfmd
 
 module-description:
     Use the mfmd motif finding tool to discover sequence motifs.

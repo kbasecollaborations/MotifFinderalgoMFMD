@@ -1,1 +1,0 @@
-{"id":"5008561291670479","method":"DataFileUtil.file_to_shock","params":[{"file_path":"/kb/module/work/tmp/html1559614877350","make_handle":0,"pack":"zip"}],"version":"1.1","context":{"call_stack":[{"time":"2019-06-04T02:21:23+0000","method":"DataFileUtil._file_to_shock_submit"}],"service_ver":"release"}}

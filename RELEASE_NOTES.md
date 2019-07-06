@@ -1,4 +1,4 @@
-# man4ish_guptamfmd release notes
+# MotifFindermfmd release notes
 =========================================
 
 0.0.0

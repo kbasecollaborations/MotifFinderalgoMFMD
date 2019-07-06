@@ -1,1 +1,0 @@
-{"id":"492614436126","method":"DataFileUtil.shock_to_file","params":[{"handle_id":"KBH_76605","unpack":"uncompress","file_path":"/kb/module/work/tmp/Ahypochondriacus_v2.1.assembly.fa"}],"version":"1.1","context":{"call_stack":[{"time":"2019-06-04T02:04:32+0000","method":"DataFileUtil._shock_to_file_submit"}],"service_ver":"release"}}

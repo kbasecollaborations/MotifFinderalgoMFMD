@@ -1,7 +1,7 @@
-SERVICE = man4ish_guptamfmd
-SERVICE_CAPS = man4ish_guptamfmd
-SPEC_FILE = man4ish_guptamfmd.spec
-URL = https://kbase.us/services/man4ish_guptamfmd
+SERVICE = motiffindermfmd
+SERVICE_CAPS = MotifFindermfmd
+SPEC_FILE = MotifFindermfmd.spec
+URL = https://kbase.us/services/motiffindermfmd
 DIR = $(shell pwd)
 LIB_DIR = lib
 SCRIPTS_DIR = scripts
