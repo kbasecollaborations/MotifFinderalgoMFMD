@@ -81,12 +81,12 @@ class MotifFindermfmdTest(unittest.TestCase):
         # Check returned data with
         # self.assertEqual(ret[...], ...) or other unittest methods
         params = {
-            'workspace_name': 'man4ish_gupta:narrative_1560302619565',
+            'workspace_name': 'man4ish_gupta:narrative_1559788829014',
             'SS_ref' : '29476/5/1',
             'motif_length':10,
             'prb':0.05,
             'obj_name':'mfmd_obj',
-            'background_group': {'background' : 1, 'genome_ref' : '29476/2/1'},
+            'background_group': {'background' : 0, 'genome_ref' : '29476/2/1'},
             'mask_repeats' : 1
         }
 
