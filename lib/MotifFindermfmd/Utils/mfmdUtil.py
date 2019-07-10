@@ -9,22 +9,27 @@ from Bio.Alphabet import IUPAC
 from io import StringIO
 from installed_clients.DataFileUtilClient import DataFileUtil
 import shutil
+import subprocess
 
 class mfmdUtil:
   def __init__(self):
       pass
 
   def build_mfmd_command(self, inputFilePath, motiflen, prb,config):
-      shutil.copytree('/kb/module/deps/kb_mfmd/mfmd', '/kb/module/work/tmp/mfmd')
+      #shutil.copytree('/kb/module/deps/kb_mfmd/mfmd', '/kb/module/work/tmp/mfmd')
+      cmd = 'cp -r /kb/module/deps/kb_mfmd/mfmd.jar /kb/module/work/tmp/'
+      subprocess.call(cmd, shell=True)
+      #exit("check_output")
       cwd=config['scratch']
       os.chdir("/kb/module/work/tmp")
-      command = 'java -jar mfmd/mfmd.jar ' + inputFilePath + ' ' + str(motiflen) + ' ' + str(prb)
+      
+      #command = 'java -jar /kb/module/deps/kb_mfmd/mfmd/mfmd.jar ' + inputFilePath + ' ' + str(motiflen) + ' ' + str(prb)
+      #print(command)
+      command = 'java -jar mfmd.jar ' + inputFilePath + ' ' + str(motiflen) + ' ' + str(prb)
       return command
 
   def run_mfmd_command(self, command):
-      #print(command)
-      #os.system('R CMD INSTALL /kb/module/deps/kb_mfmd/Rserve_1.7-3.1.tar.gz')
-      os.system('/usr/lib/R/bin/Rscript /kb/module/deps/kb_mfmd/mfmd/script.R')
+      os.system('/usr/lib/R/bin/Rscript /kb/module/deps/kb_mfmd/script.R')
       os.system(command)
 
   def parse_mfmd_output(self, path):
