@@ -116,7 +116,7 @@ class MotifFindermfmd:
         mfmd_params['prb'] = prb
 
         obj_ref = mfu.UploadFrommfmd(self.callback_url, mfmd_params)[0]['obj_ref']
-
+        mfu.write_obj_ref(mfmd_out_path, obj_ref) 
 
         timestamp = int((datetime.utcnow() - datetime.utcfromtimestamp(0)).total_seconds()*1000)
         timestamp = str(timestamp)
