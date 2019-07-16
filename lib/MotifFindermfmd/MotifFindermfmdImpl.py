@@ -252,7 +252,7 @@ class MotifFindermfmd:
         dfu = DataFileUtil(self.callback_url)
         TU = TestUtils()
         BU = BackgroundUtils()
-        if params['TESTFLAG'] and params['background']:
+        '''if params['TESTFLAG'] and params['background']:
             targetpath = '/kb/module/work/tmp/testgenome.fa'
             TU.GetGenome(targetpath)
             BU.BuildBackground(targetpath)
@@ -267,7 +267,7 @@ class MotifFindermfmd:
             print('Downloading Assembly data as a Fasta file.')
             assemblyUtil = AssemblyUtil(self.callback_url)
             fasta_file = assemblyUtil.get_assembly_as_fasta(assembly_ref)['path']
-            BU.BuildBackground(fasta_file)
+            BU.BuildBackground(fasta_file)'''
 
 
         get_objects_params = {'object_refs' : [params['SequenceSetRef']]}
