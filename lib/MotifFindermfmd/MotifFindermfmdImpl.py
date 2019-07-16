@@ -219,7 +219,7 @@ class MotifFindermfmd:
             FastaParams['TESTFLAG'] = params['TESTFLAG']
         else:
             FastaParams['TESTFLAG'] = 0'''
-        FastaParams = {'workspace_name' : params['workspace_name'] , 'SequenceSetRef' : params['SS_ref'] , 'fasta_outpath' : fastapath,'mask_repeats':params['mask_repeats']}    
+        FastaParams = {'workspace_name' : params['workspace_name'] , 'SequenceSetRef' : params['SS_ref'] , 'fasta_outpath' : fastapath]}    
         output = self.BuildFastaFromSequenceSet(ctx,FastaParams)
 
         findmotifsparams= {'workspace_name' : params['workspace_name'],'fastapath':fastapath,'motif_length':params['motif_length'],'prb':params['prb'],'SS_ref':params['SS_ref'],'obj_name':params['obj_name']}
