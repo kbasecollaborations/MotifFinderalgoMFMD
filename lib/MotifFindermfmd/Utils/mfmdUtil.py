@@ -32,6 +32,11 @@ class mfmdUtil:
       os.system('/usr/lib/R/bin/Rscript /kb/module/deps/kb_mfmd/script.R')
       os.system(command)
 
+  def write_obj_ref(self, path, obj_ref):
+      file = open(path+"/mfmd_obj.txt","w")
+      file.write(obj_ref)
+      file.close() 
+
   def parse_mfmd_output(self, path):
       pfmList = []
       pfmDict={}
