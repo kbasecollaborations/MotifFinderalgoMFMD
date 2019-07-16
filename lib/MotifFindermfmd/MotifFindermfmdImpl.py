@@ -116,7 +116,7 @@ class MotifFindermfmd:
         mfmd_params['prb'] = prb
 
         obj_ref = mfu.UploadFrommfmd(self.callback_url, mfmd_params)[0]['obj_ref']
-        mfu.write_obj_ref(mfmd_out_path, obj_ref) 
+
 
         timestamp = int((datetime.utcnow() - datetime.utcfromtimestamp(0)).total_seconds()*1000)
         timestamp = str(timestamp)
@@ -210,7 +210,7 @@ class MotifFindermfmd:
         fastapath = '/kb/module/work/tmp/tmpSeqSet.fa'
         newfastapath = '/kb/module/work/tmp/SeqSet.fa'
         fastapath = newfastapath
-        '''FastaParams = {'workspace_name' : params['workspace_name'] , 'SequenceSetRef' : params['SS_ref'] , 'fasta_outpath' : fastapath,'background':params['background_group']['background'],'mask_repeats':params['mask_repeats']}
+        FastaParams = {'workspace_name' : params['workspace_name'] , 'SequenceSetRef' : params['SS_ref'] , 'fasta_outpath' : fastapath,'background':params['background_group']['background'],'mask_repeats':params['mask_repeats']}
         if params['background_group']['background'] == 1:
             FastaParams['genome_ref'] = params['background_group']['genome_ref']
         else:
@@ -218,8 +218,7 @@ class MotifFindermfmd:
         if 'TESTFLAG' in params:
             FastaParams['TESTFLAG'] = params['TESTFLAG']
         else:
-            FastaParams['TESTFLAG'] = 0'''
-        FastaParams = {'workspace_name' : params['workspace_name'] , 'SequenceSetRef' : params['SS_ref'] , 'fasta_outpath' : fastapath]}    
+            FastaParams['TESTFLAG'] = 0
         output = self.BuildFastaFromSequenceSet(ctx,FastaParams)
 
         findmotifsparams= {'workspace_name' : params['workspace_name'],'fastapath':fastapath,'motif_length':params['motif_length'],'prb':params['prb'],'SS_ref':params['SS_ref'],'obj_name':params['obj_name']}
@@ -252,7 +251,7 @@ class MotifFindermfmd:
         dfu = DataFileUtil(self.callback_url)
         TU = TestUtils()
         BU = BackgroundUtils()
-        '''if params['TESTFLAG'] and params['background']:
+        if params['TESTFLAG'] and params['background']:
             targetpath = '/kb/module/work/tmp/testgenome.fa'
             TU.GetGenome(targetpath)
             BU.BuildBackground(targetpath)
@@ -267,7 +266,7 @@ class MotifFindermfmd:
             print('Downloading Assembly data as a Fasta file.')
             assemblyUtil = AssemblyUtil(self.callback_url)
             fasta_file = assemblyUtil.get_assembly_as_fasta(assembly_ref)['path']
-            BU.BuildBackground(fasta_file)'''
+            BU.BuildBackground(fasta_file)
 
 
         get_objects_params = {'object_refs' : [params['SequenceSetRef']]}
