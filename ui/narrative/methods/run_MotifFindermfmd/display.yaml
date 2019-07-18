@@ -58,6 +58,11 @@ parameters :
             Use Background Model
         short-hint : |
             Use genome to create background model
+    mask_repeats :
+        ui-name : |
+            Mask Repeats
+        short-hint : |
+            Mask low complexity regions of sequences 
 parameter-groups :
     background_group :
         ui-name : |

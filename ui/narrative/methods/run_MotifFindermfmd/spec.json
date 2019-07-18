@@ -80,7 +80,19 @@
                 "checked_value": 1,
                 "unchecked_value": 0
             }
-        }        
+        },
+      	{
+            "id": "mask_repeats",
+            "optional": true,
+            "advanced": false,
+            "allow_multiple": false,
+            "default_values": [ "" ],
+            "field_type": "checkbox",
+            "checkbox_options": {
+                "checked_value": 1,
+                "unchecked_value": 0
+            }
+        }       
     ],
     "parameter-groups": [
       {
@@ -129,6 +141,10 @@
                 {
                   "input_parameter": "background_group",
                   "target_property": "background_group"
+                },
+                {
+                  "input_parameter": "mask_repeats",
+                  "target_property": "mask_repeats"
                 }
             ],
             "output_mapping": [
