@@ -48,6 +48,7 @@ module MotifFindermfmd {
         string SS_ref;
         float prb;
         int motif_length;
+        int mask_repeats;
         string obj_name;
       } discover_seq_input;
 
