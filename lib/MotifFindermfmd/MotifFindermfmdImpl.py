@@ -212,8 +212,6 @@ class MotifFindermfmd:
         fastapath = '/kb/module/work/tmp/tmpSeqSet.fa'
         newfastapath = '/kb/module/work/tmp/SeqSet.fa'
         fastapath = newfastapath
-        pp(params)
-        exit()
         #FastaParams = {'workspace_name' : params['workspace_name'] , 'SequenceSetRef' : params['SS_ref'] , 'fasta_outpath' : fastapath,'background':params['background_group']['background'],'mask_repeats':params['mask_repeats']}
 
         FastaParams = {'workspace_name' : params['workspace_name'] , 'SequenceSetRef' : params['SS_ref'] , 'fasta_outpath' : fastapath,'background':params['background_group']['background']} 
@@ -286,6 +284,7 @@ class MotifFindermfmd:
             outFile.write(sseq)
         outFile.close()
         fu = FastaUtils()
+        fu.RemoveRepeats(params['fasta_outpath'],params['fasta_outpath'])
         #if params['mask_repeats']:
         #    fu.RemoveRepeats(params['fasta_outpath'],params['fasta_outpath'])
 
