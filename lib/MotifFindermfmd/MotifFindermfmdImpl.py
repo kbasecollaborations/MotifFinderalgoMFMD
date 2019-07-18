@@ -19,7 +19,7 @@ import uuid
 import MotifFindermfmd.Utils.MotifSetUtil as MotifSetUtil
 from MotifFindermfmd.Utils.mfmdUtil import mfmdUtil
 from MotifFindermfmd.Utils.MakeNewReport import MakeNewReport
-
+from pprint import pprint as pp
 
 import subprocess
 from biokbase.workspace.client import Workspace
@@ -212,7 +212,8 @@ class MotifFindermfmd:
         fastapath = '/kb/module/work/tmp/tmpSeqSet.fa'
         newfastapath = '/kb/module/work/tmp/SeqSet.fa'
         fastapath = newfastapath
-        exit(params)
+        pp(params)
+        exit()
         #FastaParams = {'workspace_name' : params['workspace_name'] , 'SequenceSetRef' : params['SS_ref'] , 'fasta_outpath' : fastapath,'background':params['background_group']['background'],'mask_repeats':params['mask_repeats']}
 
         FastaParams = {'workspace_name' : params['workspace_name'] , 'SequenceSetRef' : params['SS_ref'] , 'fasta_outpath' : fastapath,'background':params['background_group']['background']} 
