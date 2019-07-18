@@ -4,7 +4,6 @@ name: Motif Finder MFMD
 
 tooltip: |
     Use the MFMD motif finding tool to discover sequence motifs upsteam of a specified gene list.
-
 screenshots: []
 
 icon: null
@@ -69,12 +68,8 @@ parameter-groups :
             Background
         short-hint : |
             Build background model from genome
-
 description : |
     <p>MFMD is a motif finding application that uses a novel motif discovery algorithm that was focused on gene regulation elements (DNA only). Using a control and experimental sequence set Homer tries to identify the enriched sequences on the experimental set relative to the control set. This algorithm uses zero or one occurrence per sequence scoring and hypergeometric enrichment calculation (or binomial) to detect enriched motifs. This algorithm was specifically design with ChIP-seq and promoter analysis in mind. </p>
-
     <p>Input to Motif Finder Homer start with a feature set, which can either be created through a RNA-seq analysis pipeline, network clustering analysis, or by picking features out from a particular genome. From this feature set, upstream sequences are collected and then the Homer analysis is run on the promoter sequence of length defined by the user. </p>
-
     <p>This app is part of a series of app stacked to find motifs within upstream sequence regions. They are used in combination with Motif Finder Ensemble to aggregate motif finder results to produce more accurately identified motifs. </p>
-
     <p>Heinz S, Benner C, Spann N, Bertolino E et al. Simple Combinations of Lineage-Determining Transcription Factors Prime cis-Regulatory Elements Required for Macrophage and B Cell Identities. Mol Cell 2010 May 28;38(4):576-589. PMID 20513432 http://www.ncbi.nlm.nih.gov/sites/entrez?Db=Pubmed&term=20513432[UID] </p>

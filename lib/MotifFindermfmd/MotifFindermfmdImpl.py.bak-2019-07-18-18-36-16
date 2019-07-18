@@ -49,7 +49,7 @@ class MotifFindermfmd:
     ######################################### noqa
     VERSION = "0.0.1"
     GIT_URL = "https://github.com/man4ish/MotifFinderalgoMFMD.git"
-    GIT_COMMIT_HASH = "6ddcff93a2fd0978d44093a9c749bbb7464bb1e0"
+    GIT_COMMIT_HASH = "7dcd0862e8fdb4ab2d1b16d5a31addbed23f40f6"
 
     #BEGIN_CLASS_HEADER
     #END_CLASS_HEADER
@@ -72,8 +72,7 @@ class MotifFindermfmd:
         :param params: instance of type "find_motifs_params" -> structure:
            parameter "workspace_name" of String, parameter "fastapath" of
            String, parameter "prb" of Double, parameter "motif_length" of
-           Long, parameter "obj_name" of String, parameter "mask_repeats" of
-           Long
+           Long, parameter "obj_name" of String
         :returns: instance of type "extract_output_params" -> structure:
            parameter "report_name" of String, parameter "report_ref" of String
         """
@@ -201,8 +200,7 @@ class MotifFindermfmd:
         :param params: instance of type "discover_seq_input" -> structure:
            parameter "workspace_name" of String, parameter "genome_ref" of
            String, parameter "SS_ref" of String, parameter "prb" of Double,
-           parameter "motif_length" of Long, parameter "mask_repeats" of
-           Long, parameter "obj_name" of String
+           parameter "motif_length" of Long, parameter "obj_name" of String
         :returns: instance of type "extract_output_params" -> structure:
            parameter "report_name" of String, parameter "report_ref" of String
         """

@@ -37,11 +37,11 @@
             }
         },
         {
-            "id": "motif_length",
+            "id": "motif_min_length",
             "optional": false,
             "advanced": true,
             "allow_multiple": false,
-            "default_values": [ "10" ],
+            "default_values": [ "8" ],
             "field_type": "text",
             "text_options": {
                 "validate_as": "int",
@@ -49,14 +49,14 @@
             }
         },
         {
-            "id": "prb",
+            "id": "motif_max_length",
             "optional": false,
             "advanced": true,
             "allow_multiple": false,
-            "default_values": [ "0.05" ],
+            "default_values": [ "16" ],
             "field_type": "text",
             "text_options": {
-                "validate_as": "float",
+                "validate_as": "int",
                 "min_integer" : 0
             }
         },
@@ -66,7 +66,7 @@
             "optional": false,
             "advanced": false,
             "allow_multiple": false,
-            "default_values": [ "Mfmd_Motif_Set" ],
+            "default_values": [ "Homer_Motif_Set" ],
             "field_type": "text"
         },
         {
@@ -81,7 +81,7 @@
                 "unchecked_value": 0
             }
         },
-      	{
+        {
             "id": "mask_repeats",
             "optional": true,
             "advanced": false,
@@ -92,7 +92,7 @@
                 "checked_value": 1,
                 "unchecked_value": 0
             }
-        }       
+        }
     ],
     "parameter-groups": [
       {
@@ -106,7 +106,7 @@
     "behavior": {
         "service-mapping": {
             "url": "",
-            "name": "MotifFindermfmd",
+            "name": "MotifFinderHomer",
             "method": "DiscoverMotifsFromSequenceSet",
             "input_mapping": [
                 {
@@ -124,13 +124,13 @@
                     "target_type_transform": "resolved-ref"
                 },
                 {
-                    "input_parameter": "motif_length",
-                    "target_property": "motif_length"
+                    "input_parameter": "motif_min_length",
+                    "target_property": "motif_min_length"
 
                 },
                 {
-                    "input_parameter": "prb",
-                    "target_property": "prb"
+                    "input_parameter": "motif_max_length",
+                    "target_property": "motif_max_length"
 
                 },
                 {

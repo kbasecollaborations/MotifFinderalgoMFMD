@@ -72,8 +72,7 @@ class MotifFindermfmd:
         :param params: instance of type "find_motifs_params" -> structure:
            parameter "workspace_name" of String, parameter "fastapath" of
            String, parameter "prb" of Double, parameter "motif_length" of
-           Long, parameter "obj_name" of String, parameter "mask_repeats" of
-           Long
+           Long, parameter "obj_name" of String
         :returns: instance of type "extract_output_params" -> structure:
            parameter "report_name" of String, parameter "report_ref" of String
         """

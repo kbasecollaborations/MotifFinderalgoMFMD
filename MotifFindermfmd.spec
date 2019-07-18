@@ -10,6 +10,7 @@ module MotifFindermfmd {
         float prb;
         int motif_length;
         string obj_name;
+        int mask_repeats;
      } find_motifs_params;
 
      typedef structure {
