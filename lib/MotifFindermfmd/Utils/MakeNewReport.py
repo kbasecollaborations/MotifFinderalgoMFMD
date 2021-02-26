@@ -7,6 +7,12 @@ class MakeNewReport:
       pass
 
   def MakeReport(self, htmlDir, motifSet):
+      '''
+
+      :param htmlDir:
+      :param motifSet:
+      :return:
+      '''
       reportPath = '/kb/module/lib/MotifFindermfmd/Utils/Report/*'
       CopyCommand = 'cp -r ' + reportPath + ' ' + htmlDir
       os.system(CopyCommand)

@@ -4,6 +4,12 @@ class MotifSetUtil:
 
 #TODO: extract sequence from output files, add to motif object
   def ConvertMotif(self, motif,MotifSet):
+      '''
+
+      :param motif:
+      :param MotifSet:
+      :return:
+      '''
       newMotif = {}
       newMotif['Motif_Locations'] = []
       for loc in motif['Locations']:
@@ -26,5 +32,11 @@ class MotifSetUtil:
       return newMotif
 
   def parseMotifList(self, MotifList, MotifSet):
+      '''
+
+      :param MotifList:
+      :param MotifSet:
+      :return:
+      '''
       for motif in MotifList:
           MotifSet['Motifs'].append(ConvertMotif(motif,MotifSet))

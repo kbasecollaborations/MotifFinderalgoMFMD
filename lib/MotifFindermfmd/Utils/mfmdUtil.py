@@ -16,6 +16,14 @@ class mfmdUtil:
       pass
 
   def build_mfmd_command(self, inputFilePath, motiflen, prb,config):
+      '''
+
+      :param inputFilePath:
+      :param motiflen:
+      :param prb:
+      :param config:
+      :return:
+      '''
       #shutil.copytree('/kb/module/deps/kb_mfmd/mfmd', '/kb/module/work/tmp/mfmd')
       cmd = 'cp -r /kb/module/deps/kb_mfmd/mfmd.jar /kb/module/work/tmp/'
       subprocess.call(cmd, shell=True)
@@ -29,15 +37,31 @@ class mfmdUtil:
       return command
 
   def run_mfmd_command(self, command):
+      '''
+
+      :param command:
+      :return:
+      '''
       os.system('/usr/lib/R/bin/Rscript /kb/module/deps/kb_mfmd/script.R')
       os.system(command)
 
   def write_obj_ref(self, path, obj_ref):
+      '''
+
+      :param path:
+      :param obj_ref:
+      :return:
+      '''
       file = open(path+"/mfmd_obj.txt","w")
       file.write(obj_ref)
       file.close() 
 
   def parse_mfmd_output(self, path):
+      '''
+
+      :param path:
+      :return:
+      '''
       pfmList = []
       pfmDict={}
       outputFileList = []

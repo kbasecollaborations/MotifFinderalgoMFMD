@@ -6,6 +6,10 @@ class BackgroundUtils:
       pass 
 
   def BuildBackground(self, fastapath):
+      '''
+      :param fastapath:
+      :return:
+      '''
       mfmdpath = '/kb/module/work/tmp/mfmd_background.fa'
       backgroundCommand = 'mv ' + fastapath + ' ' + mfmdpath
 

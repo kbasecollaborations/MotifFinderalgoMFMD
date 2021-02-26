@@ -9,18 +9,35 @@ from Bio import SeqIO
 from Bio.Alphabet import IUPAC
 from io import StringIO
 
-def build_mfmd_command(inputFilePath, motiflen, prb):                                                                     
+def build_mfmd_command(inputFilePath, motiflen, prb):
+    '''
+
+    :param inputFilePath:
+    :param motiflen:
+    :param prb:
+    :return:
+    '''
     if not os.path.exists('/kb/module/work/tmp/mfmd'):                                                          
         os.mkdir('/kb/module/work/tmp/mfmd')                                                                    
     outputFilePath = '/kb/module/work/tmp/mfmd/mfmd_out/mfmd_output.txt'                                                                                                                               
     command = 'java -jar mfmd.jar ' + inputFilePath + ' ' + parameter + ' ' + prb + '  > ' + outputFilePath     
     return command                                                                                              
                                                                                                                 
-def run_mfmd_command(command):                                                                                 
+def run_mfmd_command(command):
+    '''
+
+    :param command:
+    :return:
+    '''
     os.system(command)                                                                                          
 
 
 def parse_mfmd_output(path):
+    '''
+
+    :param path:
+    :return:
+    '''
     pfmList = []
     pfmDict={}
     outputFileList = []
